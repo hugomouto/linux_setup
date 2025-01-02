@@ -1,5 +1,3 @@
-sudo apt install gnome-sushi
-
 #!/bin/bash
 
 # Atualiza os repositórios e o sistema
@@ -14,6 +12,9 @@ sudo apt install flatpak -y
 # Adiciona o repositório Flathub para Flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+# Instala o Gnome Sushi
+sudo apt install gnome-sushi
+
 # Instala aplicativos via Flatpak
 flatpak install flathub com.bitwarden.desktop -y
 flatpak install flathub org.gnome.Tweaks -y
@@ -22,6 +23,7 @@ flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub org.gnome.sushi -y
 flatpak install flathub com.github.simplenote.Simplenote -y
 flatpak install flathub com.todoist.Todoist -y
+flatpak install flathub org.localsend.localsend_app -y
 
 # Instalar GitHub CLI
 sudo apt install gh -y
@@ -31,9 +33,6 @@ git clone https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme.git
 cd Catppuccin-GTK-Theme
 sudo ./install.sh
 cd ..
-
-# Instalar LocalSend (instalação genérica, ajustar conforme disponibilidade)
-sudo apt install localsend -y
 
 # Limpeza de pacotes não necessários
 sudo apt autoremove -y
