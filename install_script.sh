@@ -17,7 +17,6 @@ sudo apt install gnome-sushi
 
 # Instala aplicativos via Flatpak
 flatpak install flathub com.bitwarden.desktop -y
-flatpak install flathub org.gnome.Tweaks -y
 flatpak install flathub com.github.simplenote.Simplenote -y
 flatpak install flathub md.obsidian.Obsidian -y
 flatpak install flathub com.simplenote.Simplenote -y
