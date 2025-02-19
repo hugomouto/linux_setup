@@ -26,12 +26,6 @@ flatpak install flathub org.localsend.localsend_app -y
 # Instalar GitHub CLI
 sudo apt install gh -y
 
-# Instalar o tema Catppuccin do GitHub
-git clone https://github.com/Fausto-Korpsvart/Catppuccin-GTK-Theme.git
-cd Catppuccin-GTK-Theme
-sudo ./install.sh
-cd ..
-
 # Limpeza de pacotes não necessários
 sudo apt autoremove -y
 
