@@ -14,5 +14,5 @@ chmod +x install_script.sh
 Agora que o script é executável, você pode rodá-lo com o comando:
 
 ```
-sudo ./install_script.sh
+sudo ./install_script.sh ./setup_webapps.sh
 ```
