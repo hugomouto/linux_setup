@@ -9,6 +9,10 @@ sudo apt install dpkg -y
 # Instala Flatpak
 sudo apt install flatpak -y
 
+# Instala Gnome Tweaks e Extension Manager
+sudo apt install gnome-tweak-tool
+sudo apt install gnome-shell-extension-manager
+
 # Adiciona o repositório Flathub
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
