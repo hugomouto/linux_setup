@@ -52,3 +52,24 @@ sudo apt autoremove -y
 
 # Mensagem final
 echo "Instalação concluída"
+
+#!/usr/bin/env bash
+
+# Desativar atalhos Super+Número da dock
+gsettings set org.gnome.shell.extensions.dash-to-dock hot-keys false
+
+# Remover atalhos padrão de apps (garantia)
+for i in {1..9}; do
+  gsettings set org.gnome.shell.keybindings switch-to-application-$i "[]"
+done
+
+# Fixar número de workspaces
+gsettings set org.gnome.mutter dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
+
+# Atribuir Super+Número para workspaces
+for i in {1..4}; do
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['<Super>$i']"
+done
+
+echo "Configuração aplicada. Reinicie a sessão para garantir."
